@@ -1,5 +1,18 @@
 body {
   text-align: center;
+  background-image: url(https://i.pinimg.com/originals/f4/65/3b/f4653bb8d5ac48727241c1a1742da545.jpg);
+  color: whitesmoke;
+}
+
+.shakeBtn {
+  color: white;
+  background-color: rgb(197, 77, 77);
+  border: none;
+  margin-top: 2%;
+  width: 100px;
+  height: 32px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .shaked {
@@ -27,9 +40,12 @@ body {
 
 @keyframes fall {
   0% {
-    transform: translateY(0px);
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 220px);
   }
   100% {
-    transform: translateY(220px);
+    transform: translate(180px, 170px);
   }
 }
