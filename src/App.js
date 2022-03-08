@@ -14,7 +14,9 @@ function App() {
       <div className="App">
         <h1>Tree Shake</h1>
         <AppleTree isShaked={isShaked}></AppleTree>
-        <button onClick={handleClick}>Button</button>
+        <button onClick={handleClick} className="shakeBtn">
+          Shake!
+        </button>
       </div>
     </React.Fragment>
   );
