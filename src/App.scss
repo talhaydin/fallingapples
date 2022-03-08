@@ -1,9 +1,12 @@
-.App {
+body {
   text-align: center;
 }
-
 .shaked {
   animation: shake 0.5s ease;
+}
+
+.fallen {
+  animation: fall 1s ease forwards;
 }
 
 @keyframes shake {
@@ -18,5 +21,14 @@
   }
   100% {
     transform: translateX(0px);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(220px);
   }
 }
