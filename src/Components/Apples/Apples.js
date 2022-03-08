@@ -8,7 +8,9 @@ export default function Apples({ isShaked }) {
       <img
         src={apple}
         alt=""
-        className={isShaked ? ' apple1 fallen' : 'apple1'}
+        className={
+          isShaked ? ' apple1 fallen' : 'apple1'
+        } /* apples fall based on whether if tree is shaked, again a sample of conditional styling */
       />
       <img
         src={apple}
