@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
-import Tree from './Components/Tree/Tree';
+import AppleTree from './Components/Tree/AppleTree';
 
 function App() {
   const [isShaked, setIsShaked] = useState(false);
@@ -10,13 +10,13 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Tree Shake</h1>
-      <Tree isShaked={isShaked}></Tree>
-      <div>
-        <button onClick={handleClick}>Shake</button>
+    <React.Fragment>
+      <div className="App">
+        <h1>Tree Shake</h1>
+        <AppleTree isShaked={isShaked}></AppleTree>
+        <button onClick={handleClick}>Button</button>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
